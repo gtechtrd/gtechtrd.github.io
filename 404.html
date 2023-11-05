@@ -35,6 +35,23 @@
 
 		<!-- modernizr css -->
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script>
+        var isNS = (navigator.appName == "PN") ? 1 : 0;
+        if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+        function mischandler(){
+        return false;
+        }
+        function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        </script>
+
 	</head>
 		<body>
 
@@ -95,6 +112,12 @@
 													<li><a href="404.html">Error</a></li>
 												</ul>
 											</li>
+                                            <li><a class="pagess" href="#">Divisions</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="">Steel Division</a></li>
+                                                        <li><a href="">Electrical Division</a></li>
+                                                </ul>
+                                            </li>
 											<li><a class="pagess" href="#">Products</a>
 												<ul class="sub-menu">
 													<li><a href="">Electronic Components</a></li>
@@ -158,6 +181,12 @@
 													<li><a href="404.html">Error</a></li>
 											</ul>
 										</li>
+                                        <li><a class="pagess" href="#">Divisions</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="">Steel Division</a></li>
+                                                    <li><a href="">Electrical Division</a></li>
+                                            </ul>
+                                        </li>
 										<li><a class="pagess" href="#">Products</a>
 											<ul class="sub-menu">
 												<li><a href="">Electronic Components</a></li>
@@ -186,6 +215,9 @@
                                                 <li><a href="">Bulky Goods</a></li>
                                                 <li><a href="">Cables</a></li>
                                             </ul>
+                                          </li>
+										
+                                          <li><a href="contact.html">contacts</a></li>
                                 </nav>
                             </div>					
                         </div>
@@ -254,7 +286,7 @@
                                     <div class="footer-icons">
                                         <ul>
                                             <li>
-                                                <a href="#">
+                                                <a href="https://wa.me/971566171629?text=Hi, I was just on your website and I would like to get some more information please.'" target="_blank">
                                                     <i class="fa fa-whatsapp"></i>
                                                 </a>
                                             </li>
