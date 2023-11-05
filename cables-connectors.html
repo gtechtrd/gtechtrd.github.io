@@ -4,7 +4,7 @@
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>About us | GRAVITY TECH</title>
+		<title>Cables & Connectors | GRAVITY TECH</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,6 +35,21 @@
 
 		<!-- modernizr css -->
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script>
+            var isNS = (navigator.appName == "PN") ? 1 : 0;
+            if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+            function mischandler(){
+            return false;
+            }
+            function mousehandler(e){
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if((eventbutton==2)||(eventbutton==3)) return false;
+            }
+            document.oncontextmenu = mischandler;
+            document.onmousedown = mousehandler;
+            document.onmouseup = mousehandler;
+            </script>
 	</head>
 		<body>
 
@@ -78,7 +93,7 @@
                         </div>
                         <!-- logo end -->
                         <div class="col-md-9 col-sm-9">
-                           
+                        
                             <!-- mainmenu start -->
                             <nav class="navbar navbar-default">
                                 <div class="collapse navbar-collapse" id="navbar-example">
@@ -103,8 +118,8 @@
                                             </li>
 											<li><a class="pagess" href="#">Products</a>
 												<ul class="sub-menu">
-													<li><a href="">Electronic Components</a></li>
-													<li><a href="">Cables & Connectors</a></li>
+													<li><a href="electronics.html">Electronic Components</a></li>
+													<li><a href="cables-connectors.html">Cables & Connectors</a></li>
 													<li><a href="">Construction Lasers</a></li>
 													<li><a href="">Pure Solar</a></li>
                                                     <li><a href="">Tools & Equipment</a></li>
@@ -172,8 +187,8 @@
                                         </li>
 										<li><a class="pagess" href="#">Products</a>
 											<ul class="sub-menu">
-												<li><a href="">Electronic Components</a></li>
-													<li><a href="">Cables & Connectors</a></li>
+												<li><a href="electronics.html">Electronic Components</a></li>
+													<li><a href="cables-connectors.html">Cables & Connectors</a></li>
 													<li><a href="">Construction Lasers</a></li>
 													<li><a href="">Pure Solar</a></li>
                                                     <li><a href="">Tools & Equipment</a></li>
@@ -198,9 +213,10 @@
                                                 <li><a href="Bulky-Goods-b.html">Bulky Goods</a></li>
                                                 <li><a href="cables-b.html">Cables</a></li>
                                             </ul>
-                                          </li>
+										</li>
 										
-                                          <li><a href="contact.html">contacts</a></li>
+										<li><a href="contact.html">contacts</a></li>
+                                    </ul>
                                 </nav>
                             </div>					
                         </div>
@@ -218,11 +234,11 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="breadcrumb text-center">
                             <div class="section-headline white-headline text-center">
-                                <h3>About us</h3>
+                                <h3>Cables & Connectors</h3>
                             </div>
                             <ul>
                                 <li class="home-bread">Home</li>
-                                <li>About us</li>
+                                <li>Cables & Connectors</li>
                             </ul>
                         </div>
                     </div>
@@ -230,174 +246,175 @@
             </div>
         </div>
         <!-- End breadcumb Area -->
-          <!-- about-area start -->
-        <div class="about-area bg-color area-padding">
+         <!-- End services Area -->
+        <div class="single-services-page area-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-image">
-                            <img src="img/banner/Electronics-and-Communication-Engineering.jpg" alt="">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="page-head-left">
+                           <!-- strat single area -->
+                            <div class="single-page-head">
+                                <div class="left-menu">
+                                    <ul>
+                                        <li><a href="electronics.html">Electronic Components</a></li>
+                                        <li class="active"><a href="cables-connectors.html">Cables & Connectors </a></li>
+                                        <li><a href="#">Construction Lasers</a></li>
+                                        <li><a href="#">Pure Solar</a></li>
+                                        <li><a href="#">Tools & Equipment</a></li>
+                                        <li><a href="#">Electrical & Power</a></li>
+                                        <li><a href="#">Survey Material</a></li>
+                                        <li><a href="#">Aviation GSE</a></li>
+                                        <li><a href="#">EPC Essentials</a></li>
+                                        <li><a href="#">Oil & Lubricants</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- strat single area -->
+                            <div class="single-page-head">
+                                <div class="support-text">
+									<h4>Online Support</h4>
+									<a><i class="icon icon-phone"></i>+971 56 617 1629</a>
+									<p>Online support our customer.</p>
+								</div>
+                            </div>
                         </div>
                     </div>
-                    <!-- column end -->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-content">
-							<h4><span class="color">Since 2020 </span>Gravity Tech Engineering firm helping clients.</h4>
-                            <p>Gravity Tech Trading companies, headed by Intech Automazione, an international multi-brand distributor of products and components for the industry. Each one of the companies composing the network is focused on providing top-notch service to the customers in the relevant area assuring a swift response, fast delivery, and best pricing.</p>
-                            <div class="about-details text-center">
-                                <div class="single-about">
-                                    <div class="icon-title">
-                                    	<a href="#"><i class="icon icon-checkmark-circle"></i></a>
-                                        <h5>Certified company</h5>
+                    <!-- End left sidebar -->
+                    <!-- Start service page -->
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="single-page">
+                                    <div class="page-img">
+                                        <img src="img/gravity/cable-connectors.jpg" alt="">
                                     </div>
-									<p></p>
                                 </div>
-                                <div class="single-about">
-                                    <div class="icon-title">
-										<a href="#"><i class="icon icon-thumbs-up"></i></a>
-										<h5>Our experience</h5>
-                                    </div>
+                            </div>
+                            <!-- strat single page -->
+                            <!-- single-well end-->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="single-well">
+                                    <a href="#">
+                                        <h3>Cables & Connectors</h3>
+                                    </a>
                                     <p></p>
+                                    <ul class="marker-list">
+                                        <li>Cables</li>
+                                        <li>Connectors – Audio/Video</li>
+                                        <li>Connectors – Single Pole</li>
+                                        <li>Connectors – Terminal Blocks</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- column end -->
-                </div>
-            </div>
-        </div>
-        <!-- about-area end -->
-         <!-- Start Overview -->
-        <div class="overview-area fix parallax-bg" data-stellar-background-ratio="0.6">
-            <div class="container-full ">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="client-details">
-                            <div class="client-head">
-                                <h3>Our valuable partner</h3>
-                                <p></p><br>
+                        <!-- end Row -->
+                        <div class="row mar-row">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="single-page middle-image">
+                                    <div class="page-img">
+                                        <img src="img/gravity/cable-connector-ends.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="client-inner">
-                                <div class="single-client">
-                                    <a href="#"><img src="img/brands/emerson-200x113.png" alt=""></a>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="single-well">
+                                    <a href="#">
+                                        <h4>Cables & Connectors</h4>
+                                    </a>
+                                    <p></p>
+                                    <ul class="marker-list">
+                                        <li>Heat Sleeve</li>
+                                        <li>Heat Shrink</li>
+                                        <li>Connectors – Mains/Power</li>
+                                        <li>Connectors – RF/Coaxial</li>
+                                    </ul>
                                 </div>
-                                <!-- End single-client -->
-                                <div class="single-client">
-                                    <a href="#"><img src="img/brands/Inor-Krohne-200x113.png" alt=""></a>
-                                </div>
-                                <!-- End single-client -->
-                                <div class="single-client">
-                                    <a href="#"><img src="img/brands/Italmanometri-200x113.png" alt=""></a>
-                                </div>
-                                <!-- End single-client -->
-                                <div class="single-client">
-                                    <a href="#"><img src="img/brands/konica-minolta-200x113.png" alt=""></a>
-                                </div>
-                                <!-- End single-client -->
                             </div>
+                            <!-- End single page -->
                         </div>
-                    </div>
-                    <!-- End Column -->
-                    <div class=" col-md-6 col-sm-12 col-xs-12">
-                        <div class="company-content">
-                        	<div class="main-view">
-								<div class="single-view">
-									<a class="view-images" href="#"><i class="fa fa-user-secret"></i></a>
-									<div class="view-content">
-										<h4>Expert Team member</h4>
-										 <p></p><br>
+                        <!-- end Row -->
+                        <div class="row mar-row">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="single-well">
+                                    <a href="#">
+                                        <h4>Cables & Connectors</h4>
+                                    </a>
+                                    <p></p>
+                                    <ul class="marker-list">
+                                        <li>Control Gear/Din Terminal</li>
+                                        <li>Equipment Wire</li>
+                                        <li>Connectors – Multiple</li>
+                                        <li>Equipment Wire</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End single page -->
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="single-page">
+                                    <div class="page-img">
+                                        <img src="img/gravity/cables-speedtec-DIN-connectors.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End single page -->
+                        </div>
+                        <!-- end Row -->
+                        <div class="row mar-row">
+                           <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="single-page">
+                                    <div class="page-img elec-page">
+                                        <img src="img/gravity/cable-connector-ends.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End single page -->
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+								<div class="tab-menu">
+									 <!-- Nav tabs -->
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="active"><a href="#p-view-1" role="tab" data-toggle="tab">Mission</a></li>
+										<li><a href="#p-view-2" role="tab" data-toggle="tab">Vision</a></li>
+										<li><a href="#p-view-3" role="tab" data-toggle="tab">Experience</a></li>
+									</ul>
+								</div>
+								<div class="tab-content">
+									<div class="tab-pane active" id="p-view-1">
+										<div class="tab-inner">
+											<div class="event-content head-team">
+												<h5>Mission</h5>
+												<p>To earn the lifetime loyalty of our customers, by consistently delivering them high performance material & best solution, which can offer them excellent value.</p>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="p-view-2">
+										<div class="tab-inner">
+											<div class="event-content head-team">
+												<h5>Vision</h5>
+												<p>Technology is best, when it brings people together. Choosing us means “The correct way of acquiring the Invention. Solutions look easy when our experts furnish it to you; we gain your trust by our work not just by words.</p>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="p-view-3">
+										<div class="tab-inner">
+											<div class="event-content head-team">
+												<h5>Experience</h5>
+												<p>Each one of the companies composing the network is focused on providing top-notch service to the customers in the relevant area assuring a swift response, fast delivery, and best pricing.</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<!-- End single-view -->
-							<div class="main-view">
-								<div class="single-view">
-									<a class="view-images" href="#"><i class="fa fa-industry "></i></a>
-									<div class="view-content">
-										<h4>Full Services</h4>
-										 <p></p><br>
-									</div>
-								</div>
-							</div>
-							<!-- End single-view -->
-							<div class="main-view">
-								<div class="single-view">
-									<a class="view-images" href="#"><i class="fa fa-bar-chart "></i></a>
-									<div class="view-content">
-										<h4>Low Costing</h4>
-										 <p></p><br>
-									</div>
-								</div>
-							</div>
-							<!-- End single-view -->
-						   <div class="main-view">
-								<div class="single-view">
-									<a class="view-images" href="#"><i class="fa fa-trophy"></i></a>
-									<div class="view-content">
-										<h4>On time Finished</h4>
-										 <p></p>
-									</div>
-								</div>
-							</div>
-							<!-- End single-view -->
+                            <!-- end column -->
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Overview -->
-        <!-- Start About Area -->
-         <div class="video-page-area area-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="video-text">
-                           <h4>Products & Solutions.</h4>
-                            <p>
-                                
-                            </p><br>
-                            <ul class="marker-list">
-                                <li>Steel Division.</li>
-                                <li>Electrical Division.</li>
-                                <li>Electronic Components Division.</li>
-                                <li>Robotics Division.</li>
-                                <li>Instrumentation Division.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="video-inner text-center">
-                            <div class="video-content">
-                                <a href="" class="video-play vid-zone">
-                                <i class="fa fa-play"></i>
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end Row -->
-            </div>
-        </div>
-        <!-- End About Area -->
-       
-        <!-- Start Banner Area -->
-        <div class="banner-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="banner-content text-left">
-                            <h4>Are you looking for professional Services of your company</h4>
-                            <div class="banner-contact-btn">
-                                <a class="banner-btn" href="#">Contact us</a>
-                            </div>
-                        </div>
+                        <!-- end Row -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Banner Area -->
-         <!-- Start Footer bottom Area -->
-         <footer>
+        <!-- End page Area -->
+        <!-- Start Footer bottom Area -->
+        <footer>
             <div class="footer-area">
                 <div class="container">
                     <div class="row">
