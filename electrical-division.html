@@ -4,7 +4,7 @@
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Error | GRAVITY TECH</title>
+		<title>Electrical Division | GRAVITY TECH</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,6 +35,26 @@
 
 		<!-- modernizr css -->
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        var isNS = (navigator.appName == "PN") ? 1 : 0;
+        if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+        function mischandler(){
+        return false;
+        }
+        function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        </script>
+
+
 	</head>
 		<body>
 
@@ -51,7 +71,7 @@
                                     <li class="hidden-sm"><a href="#"><i class="fa fa-clock-o"></i> Mon - Fri: 09:00 - 18:00</a></li>
                                     <li><a href="mailto:sales@gravitytechtrd.com"><i class="fa fa-envelope"></i> sales@gravitytechtrd.com</a></li>
                                     <li><a href="tel:+971566171629"><i class="fa fa-phone"></i> +971 56 617 1629</a></li>
-                                </ul>   
+                                </ul>    
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-3">
@@ -71,14 +91,24 @@
                         <div class="col-md-3 col-sm-3 logo-bg">
                             <div class="logo">
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="">
+                                <a class="navbar-brand page-scroll sticky-logo" href="indexgt.html">
                                     <img src="logo-l-rbg-p.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <!-- logo end -->
                         <div class="col-md-9 col-sm-9">
-                           
+                            <div class="header-right-link">
+                                <!-- search option start -->
+                                <form action="#">
+                                    <div class="search-option">
+                                        <input type="text" placeholder="Search...">
+                                        <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <a class="main-search" href="#"><i class="fa fa-search"></i></a>
+                                </form>
+                                <!-- search option end -->
+                            </div>
                             <!-- mainmenu start -->
                             <nav class="navbar navbar-default">
                                 <div class="collapse navbar-collapse" id="navbar-example">
@@ -92,7 +122,7 @@
 													<li><a href="about.html">About us</a></li>
 													
 													<li><a href="faq.html">FAQ</a></li>
-													<li><a href="error.html">Error</a></li>
+													<li><a href="404.html">Error</a></li>
 												</ul>
 											</li>
                                             <li><a class="pagess" href="#">Divisions</a>
@@ -161,7 +191,7 @@
 											<ul class="sub-menu">
 												<li><a href="about.html">About us</a></li>
 													<li><a href="faq.html">FAQ</a></li>
-													<li><a href="error.html">Error</a></li>
+													<li><a href="404.html">Error</a></li>
 											</ul>
 										</li>
                                         <li><a class="pagess" href="#">Divisions</a>
@@ -198,6 +228,10 @@
                                                 <li><a href="">Bulky Goods</a></li>
                                                 <li><a href="">Cables</a></li>
                                             </ul>
+                                          </li>
+										
+                                          <li><a href="contact.html">contacts</a></li>
+                                    </ul>
                                 </nav>
                             </div>					
                         </div>
@@ -215,11 +249,11 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="breadcrumb text-center">
                             <div class="section-headline white-headline text-center">
-                                <h3>Error</h3>
+                                <h3>Electrical Division</h3>
                             </div>
                             <ul>
                                 <li class="home-bread">Home</li>
-                                <li>Error</li>
+                                <li>Electrical Division</li>
                             </ul>
                         </div>
                     </div>
@@ -227,28 +261,206 @@
             </div>
         </div>
         <!-- End breadcumb Area -->
-         <div class="page-head area-padding">
-			<div class="container">
-				<div class="row">
-				    <div class="col-md-12 col-sm-12 col-xs-12">
-				        <div class="row">
-		                    <div class="error-page">
-								<!-- map area -->
-								<div class="col-md-12 col-sm-12 col-xs-12">
-								    <div class="error-main-text text-center">
-								        <h2 class="error-easy-text">Page Not Found</h2>
-								    	<h1 class="high-text">4<span class="color">0</span>4</h1>
-								    	<h3 class="error-bot">Oops, the page you are looking for does not exit.</h3>
-								    	<a  class="error-btn" href="https://gravitytechtrd.com/" target="_blank">Back Homepage</a>
-								    </div>
+        <!--Blog Area Start-->
+        <div class="blog-page-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="blog-details">
+                        <!-- Start single blog -->
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                           <!-- single-blog start -->
+                            <article class="blog-post-wrapper">
+                                <div class="blog-banner">
+                                    <a href="#" class="blog-images">
+                                        <img src="img/gravity/electrical-division.jpg" alt="">
+                                    </a>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+											<span class="date-type">
+												Electrical
+											</span>
+										</div>
+                                        <a href="#"><h4>Electrical Division</h4></a>
+                                        <p></p>
+                                        <blockquote>
+                                            <p></p>
+                                        </blockquote>							
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="clear"></div>
+                            <div class="single-post-comments">
+                                <div class="comments-area">
+                                    <div class="comments-heading">
+                                        <h3></h3>
+                                    </div>
+                                   
+                                </div>
+                                <div class="comment-respond">
+                                    <h3 class="comment-reply-title">Leave a Reply </h3>
+                                    <span class="email-notes">Your email address will not be published. Required fields are marked *</span>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <p>First Name *</p>
+                                                <input type="text" name="name" required />
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <p>Last Name *</p>
+                                                <input type="text" name="lastname" required />
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <p>Email *</p>
+                                                <input type="email" name="email" required />
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <p>Phone Number *</p>
+                                                <input type="text" name="number" required />
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <p>Country *</p>
+                                                <input type="text" name="country" required />
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <p>Date *</p>
+                                                <input type="text" name="date" required />
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 comment-form-comment">
+                                                <p>Massage *</p>
+                                                <textarea id="message-box" cols="30" rows="10"></textarea>
+                                                <input class="add-btn contact-btn" type="submit" value="Post Comment" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>						
+                            </div>
+                            <!-- single-blog end -->
+                        </div>
+                    </div>
+                    <!-- End main column -->
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="left-head-blog">
+							<div class="left-blog-page">
+								<!-- search option start -->
+								<form action="#">
+									<div class="blog-search-option">
+										<input type="text" placeholder="Search...">
+										<button class="button" type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+									</div>
+								</form>
+								<!-- search option end -->
+							</div>
+							<div class="left-blog-page">
+								<div class="left-blog">
+									<h4>Product Range</h4>
+									<ul>
+										<li><a href="#">Robotics</a></li>
+                                        <li><a href="#">Switches </a></li>
+                                        <li><a href="#">Automation</a></li>
+                                        <li><a href="#">Valves Monitoring</a></li>
+                                        <li><a href="#">Pressure Transmitter</a></li>
+                                        <li><a href="#">Climate Control</a></li>
+                                        <li><a href="#">Directional Control</a></li>
+                                        <li><a href="#">Compressors</a></li>
+									</ul>
 								</div>
-					        </div>
-					    </div>
+							</div>
+							<div class="left-blog-page">
+								<!-- recent start -->
+								<div class="left-blog">
+									<h4>recent post</h4>
+									<div class="recent-post">
+										<!-- start single post -->
+										<div class="recent-single-post">
+											<div class="post-img">
+												<a href="#">
+													<img src="img/blog/b1.jpg" alt="">
+												</a>
+											</div>
+											<div class="pst-content">
+												<p><a href="#">Technology</a></p>
+												<span class="date-type">
+													
+												</span>
+											</div>
+										</div>
+										<!-- End single post -->
+										<!-- start single post -->
+										<div class="recent-single-post">
+											<div class="post-img">
+												<a href="#">
+													<img src="img/blog/b2.jpg" alt="">
+												</a>
+											</div>
+											<div class="pst-content">
+												<p><a href="#">Robotics</a></p>
+												<span class="date-type">
+													
+												</span>
+											</div>
+										</div>
+										<!-- End single post -->
+										<!-- start single post -->
+										<div class="recent-single-post">
+											<div class="post-img">
+												<a href="#">
+													<img src="img/blog/b3.jpg" alt="">
+												</a>
+											</div>
+											<div class="pst-content">
+												<p><a href="#">Automotion</a></p>
+												<span class="date-type">
+													
+												</span>
+											</div>
+										</div>
+										<!-- End single post -->
+										<!-- start single post -->
+										<div class="recent-single-post">
+											<div class="post-img">
+												<a href="#">
+													<img src="img/blog/b4.jpg" alt="">
+												</a>
+											</div>
+											<div class="pst-content">
+												<p><a href="#">Power Distribution</a></p>
+												<span class="date-type">
+													
+												</span>
+												
+											</div>
+										</div>
+										<!-- End single post -->
+									</div>
+								</div>
+								<!-- recent end -->
+							</div>
+							<div class="left-blog-page">
+								<div class="left-tags blog-tags">
+									<div class="popular-tag left-side-tags left-blog">
+										<h4>popular tags</h4>
+										<ul>
+											<li><a href="#">Industry</a></li>
+											<li><a href="#">Construction </a></li>
+											<li><a href="#">Mechanical</a></li>
+											<li><a href="#">Engineering</a></li>
+											<li><a href="#">Manufacturing</a></li>
+											<li><a href="#">Automotive</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
+					<!-- End left sidebar -->
+                </div>
+                <!-- End row -->
+            </div>
+        </div>
+        <!--End of Blog Area-->
         <!-- Start Footer bottom Area -->
         <footer>
             <div class="footer-area">
